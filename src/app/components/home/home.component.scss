@@ -1,0 +1,31 @@
+button{
+      display: flex;
+      flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     align-self: flex-end;
+}
+.Dashboard{
+      padding: 20px;
+      border-bottom:1px solid rgba(128, 128, 128, 0.144);
+}
+.text{
+      font-weight:500;
+      font-size:20px;
+}
+.matbutton{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+.Monthly{
+      border-bottom: 0.8px solid rgba(128, 128, 128, 0.24);
+}
+.import-card{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.155);
+      padding: 20px;
+}
+.import-user{
+      padding: 10px;
+      border-bottom: 1px solid rgba(220, 220, 220, 0.461);
+}

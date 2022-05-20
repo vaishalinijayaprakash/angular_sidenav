@@ -1,14 +1,142 @@
 <mat-sidenav-container class="full-height" autosize="true">
-    <mat-sidenav mode="side" opened (click)="toggleSidebar()">
-        
-        <!-- <div mat-menu-item (click)="toggleSidebar()" class="with-icon padded">
-            <mat-icon matTooltip="toggle side menu">menu</mat-icon>&nbsp;
-        </div> -->
+    <mat-sidenav mode="side"  #sidenav opened (click)="toogleMenu()">
+        <mat-accordion class="accordion">
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <mat-icon [routerLink]="['/personalData']">home </mat-icon>
+                        <span class="personal">Personal data</span>
+                    </mat-panel-title>
 
-        <div mat-menu-item *ngFor="let i of sideMenu" [routerLink]="['/', i.route]" class="with-icon padded" (click)="$event.stopPropagation()">
-            <mat-icon [matTooltip]="i.toolTip">{{ i.icon }}</mat-icon>&nbsp;
-            <span [hidden]="collapse">{{ i.name }}</span>
-        </div>
+                </mat-expansion-panel-header>
+                <button mat-button> Default</button>
+                <button mat-button> Alternative </button>
+            </mat-expansion-panel>
+        </mat-accordion>
+ 
+            <p class="Pages">PAGES</p>
+            <mat-accordion class="accordion">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-icon [routerLink]="['/Users']">people_outline</mat-icon>
+                            <span class="personal">Users</span>
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <button mat-button> Default</button>
+                    <button mat-button> Alternative </button>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <mat-accordion class="accordion">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-icon class="mt-3">person</mat-icon>
+                            <!-- <button mat-raised-button  
+                            matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+                          Action
+                        </button> -->
+                        <span matBadge="5" matBadgeOverlap="false" class="m-3"> User Profile</span>
+
+                            <!-- <span class="personal"  matBadge="8" matBadgePosition="before" matBadgeColor="accent">User Profile</span> -->
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <button mat-button> Default</button>
+                    <button mat-button> Alternative </button>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+           <mat-accordion class="accordion">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-icon>account_box </mat-icon>
+                            <span class="personal">Account</span>
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <button mat-button> Default</button>
+                    <button mat-button> Alternative </button>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <mat-accordion class="accordion">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-icon>shop</mat-icon>
+                            <span class="personal">E-commerce</span>
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <button mat-button> Default</button>
+                    <button mat-button> Alternative </button>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <mat-accordion class="accordion">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-icon>email</mat-icon>
+                            <span class="personal">Projects</span>
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <button mat-button> Default</button>
+                    <button mat-button> Alternative </button>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <mat-accordion class="accordion">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-icon>invert_colors_off</mat-icon>
+                            <span class="personal">project</span>
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <button mat-button> Default</button>
+                    <button mat-button> Alternative </button>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <mat-list role="list"  class="menu-list">
+                <mat-list-item role="listitem"><mat-icon class="m-4"> 3d_rotation </mat-icon> API Keys</mat-list-item>
+                <mat-list-item role="listitem"> <mat-icon class="m-4"> compass_calibration</mat-icon> Welcome PAge </mat-list-item>
+                <mat-list-item role="listitem"> <mat-icon class="m-4"> 3d_rotation </mat-icon> 
+                    
+                  Landing Page   <span class="badge bg-secondary">New</span></mat-list-item>
+              </mat-list>
+              
+            <!-- <mat-accordion class="accordion">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-icon>home </mat-icon>
+                            <span class="personal">E-commerce
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <button mat-button> Default</button>
+                    <button mat-button> Alternative </button>
+                </mat-expansion-panel>
+            </mat-accordion> -->
+
+            <!-- <mat-accordion class="accordion">
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-icon>home </mat-icon>
+                            <span class="personal">Projects</span>
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <button mat-button> Default</button>
+                    <button mat-button> Alternative </button>
+                </mat-expansion-panel>
+            </mat-accordion>   -->
+ 
+
     </mat-sidenav>
 
     <mat-sidenav-content class="padded">

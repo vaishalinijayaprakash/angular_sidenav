@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mean-demo2-client';
+  SubMenuState:boolean = false;
+  burgerClicked(event){
+this.SubMenuState =event;
+console.log("inside burger--------")
+  }
 }

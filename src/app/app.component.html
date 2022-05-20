@@ -1,2 +1,2 @@
-<app-top-bar></app-top-bar>
-<app-side-bar></app-side-bar>
+<app-top-bar (menuState)="burgerClicked($event)"></app-top-bar>
+<app-side-bar [SubMenuState] ="SubMenuState"></app-side-bar>

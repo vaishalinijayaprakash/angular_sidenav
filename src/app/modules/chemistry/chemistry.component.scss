@@ -1,0 +1,62 @@
+.circle1{
+    width:40px;
+    height:40px;
+    background-color:rgba(0, 0, 255, 0.753);
+    border-radius: 80px ;
+    margin-left: 5rem;
+    padding: 5rem;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+color:white;
+font-size:30px;
+font-weight:700;
+}
+.circle2{
+    width: 20px;
+    height:20px;
+    background-color: purple;
+    border-radius: 60px;
+    margin-left: 2rem;
+    padding: 3rem;
+    display: block;
+     color:white;
+    position:absolute;
+    transform: translateY(-60px);
+    font-size:20px;
+    font-weight:700 ;
+    text-align:center;
+    
+}
+.circle3{
+    width:10px;
+    height: 10px;
+    background-color: rgb(144, 233, 238);
+    padding: 2rem;
+    color:white;
+    display: inline-block;
+    transform: translate(-130px, 150px);
+    position:absolute;
+    border-radius: 40px;
+    font-size:20px;
+    font-weight: 700;
+    // margin-right:9rem;
+
+}
+.card-title{
+    margin-left: 7rem !important;
+    font-size: 15px;
+  }
+.reports{
+    margin:10px;
+    padding:4px;
+    //border-bottom:1px solid rgba(128, 128, 128, 0.208)
+}
+.reports-class{
+    width:105%;
+    border-bottom: 1px solid rgba(188, 180, 180, 0.16);
+}
+.transcation-class{
+    width:140%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.153);
+}

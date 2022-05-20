@@ -1,7 +1,19 @@
 .full-height {
+
     height: 100%;
+    background-color:white;
+
+    .Pages{
+        margin: 30px 25px;
+         
+            color:gray
+    
+    }
 }
 
+.menu-list{
+    right: 20px;
+}
 .padded {
     padding: 10px;
 }
@@ -9,4 +21,14 @@
 .with-icon {
     display: flex;
     align-items: center;
+}
+.accordion{
+    box-shadow:none;
+    button
+    {
+width:100%;
+    }
+    .personal{
+        margin-left:1rem;
+    }
 }

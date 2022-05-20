@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { menuList } from './menu-list';
 
 @Component({
@@ -6,18 +6,24 @@ import { menuList } from './menu-list';
   templateUrl: './side-bar.component.html',
   styleUrls: ['./side-bar.component.scss']
 })
-export class SideBarComponent implements OnInit {
-
+export class SideBarComponent implements OnInit,OnChanges {
+@Input() SubMenuState;
+opened:boolean;
+ShowMenu = true;
   sideMenu = menuList;
-  collapse = false;
-
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  toggleSidebar() {
-    this.collapse = !this.collapse;
-  }
+ toogleMenu(){
+   this.ShowMenu= !this.ShowMenu; 
+ }  
+ ngOnChanges(): void {
+   console.log("inside ngOnchanges With SubMenustate ----")
 
+   this.ShowMenu = this.SubMenuState
+ }
+ 
 }
